@@ -1,0 +1,5 @@
+Task List
+	Checkbox to Hide Authors of Blogs
+	Checkbox to Hide Titles of Pages
+	Checkboxes for Footer and Header Options
+	Header Options

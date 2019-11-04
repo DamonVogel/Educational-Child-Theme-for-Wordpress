@@ -1,0 +1,52 @@
+//  =============================
+    //  = Header Left Side #4 Section=
+    //  =============================
+	$wp_customize->add_setting( 'HeaderLeft4_custom_control', array(
+      'default' => '',
+      'transport' => 'refresh',
+      'sanitize_callback' => 'wp_filter_nohtml_kses'
+	));
+	
+	$wp_customize->add_control( new Simple_Notice_Custom_Control( $wp_customize, 'HeaderLeftT4', array(
+      'label' => __( 'Header Left Side - Link #4' ),
+      'description'  => '',
+      'section' => 'header_left',
+      'settings'   => 'HeaderLeft4_custom_control'
+   	)));
+
+	//  =============================
+    //  = Header Left Side #4 Link Text=
+    //  =============================
+    
+	$wp_customize->add_setting('HeaderLeft4LT', array(
+        'default'        => '',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'theme_mod',
+ 
+    ));
+ 
+    $wp_customize->add_control('HeaderLeft4LT_control', array(
+        'label'      => __('Link Text', 'themename'),
+        'description' => '',
+    	'section'    => 'header_left',
+        'settings'   => 'HeaderLeft4LT',
+    ));
+
+//  =============================
+    //  = Header Left Side #4 Link Text=
+    //  =============================
+    
+	$wp_customize->add_setting('HeaderLeft4LK', array(
+        'default'        => '#',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'theme_mod',
+ 
+    ));
+ 
+    $wp_customize->add_control('HeaderLeft4LK_control', array(
+        'label'      => __('Link URL', 'themename'),
+        'description' => '',
+    	'section'    => 'header_left',
+        'settings'   => 'HeaderLeft4LK',
+    ));
+
